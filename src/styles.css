@@ -95,6 +95,13 @@
     background: var(--ember);
     color: var(--ink);
   }
+
+  /* Hide Lovable publish badge / watermark when injected on hosted preview */
+  #lovable-badge,
+  [id^="lovable-badge"],
+  a[href*="lovable.dev"][class*="badge"] {
+    display: none !important;
+  }
 }
 
 @utility font-display {
